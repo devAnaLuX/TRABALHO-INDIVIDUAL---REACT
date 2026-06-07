@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fundo{
+  background-color: rgb(11, 7, 45);
+  flex: 1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login{
+  background-color: #292929;
+  width: 40rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image{
+  width: 4rem;
+}
+
+.site{
+  font-size: xx-large;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.titulo{
+  color: white;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 3rem;
+}
+
+.descricao{
+  color: #c7c7c7;
+  text-align: center;
+}
+
+.input{
+  background-color: #292929;
+  color: #8f989d;
+  width: 80%;
+  height: 2.5rem;
+  border: 1px solid #8f989d;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.input::placeholder{
+  color: #8f989d;
+}
+
+.button{
+  background-color: #328a52;
+  color: white;
+  width: 80%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.mensagem {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #328a52;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.link{
+  color: #328a52;
+  font-size: smaller;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
