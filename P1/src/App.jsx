@@ -13,11 +13,11 @@ function App() {
     if (!tentouLogar) return;
 
     if (email === "analuisacunhareis@gmail.com" && senha === "2303") {
-      mostrarMensagem("Login realizado com sucesso! ✅");
+      mostrarMensagem("Login realizado com sucesso!");
       window.location.href = "https://www.xbox.com/pt-br/games?xr=shellnav"
 
     } else {
-      mostrarMensagem("Usuário ou senha incorretos. ❌");
+      mostrarMensagem("Usuário ou senha incorretos.");
     }
 
     setTentouLogar(false);
@@ -38,10 +38,6 @@ function App() {
       return;
     }
     setEtapa("senha");
-  }
-
-  function handleEntrar() {
-    setTentouLogar(true);
   }
 
   return (
@@ -86,7 +82,7 @@ function App() {
 
             <a className={styles.link} href="#"> Esqueceu sua senha?</a>
 
-            <button className={styles.button} onClick={handleEntrar}> Entrar </button>
+            <button className={styles.button} onClick={() => setTentouLogar(true)}> Entrar </button>
          </>
          }
       </div> 
